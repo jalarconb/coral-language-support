@@ -1,0 +1,35 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "CORAL",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.coral",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+
+		"strings": {
+			"name": "string.quoted.double.coral",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.coral",
+					"match": "\\\\."
+				}
+			]
+		}
+
+	},
+	"scopeName": "source.coral"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "coral-language-support",
+  "displayName": "CORAL Language Support",
+  "description": "Support for the CORAL programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages", "Snippets"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "coral",
+      "aliases": ["CORAL", "coral"],
+      "extensions": [".coral"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "coral",
+      "scopeName": "source.coral",
+      "path": "./syntaxes/coral.tmLanguage.json"
+    }],
+    "snippets": [
+      {
+        "language": "coral",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

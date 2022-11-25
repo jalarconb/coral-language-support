@@ -1,0 +1,14 @@
+{
+  "Hola":{
+    "prefix": "hola",
+    "body": "print(\"Hola\")",
+    "description": "Escribe hola"
+  },
+
+  "integer":{
+    "prefix": "int",
+    "body": "integer $1",
+    "description": "Define an integer varible."
+  }
+  
+}
