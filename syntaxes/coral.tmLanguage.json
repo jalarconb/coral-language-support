@@ -1,25 +1,64 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "CORAL",
 	"patterns": [
 		{
 			"include": "#keywords"
 		},
 		{
+			"include": "#types"
+		},
+		{
+			"include": "#parameters"
+		},
+		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#functionsLenguage"
+		},
+		{
+			"include": "#variables"
 		}
+		
 	],
 	"repository": {
 
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.coral",
-				"match": "\\b(if|while|for|return)\\b"
+				"name": "string.quoted.double.coral",
+				"match": "\\b(to|output|if|elseif|else|while|Get|for|array|returns|size|with|decimal|places|next|input|Put|or|and|nothing|not)\\b"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "markup.bold.coral",
+				"match": "\\b(integer|float)\\b"
+			}]
+		},
+		"functions": {
+			"patterns": [{
+				"name": "entity.name.function",
+				"match": "\\b(Function|Main)\\b"
+			}]
+		},
+		"functionsLenguage": {
+			"patterns": [{
+				"name": "variable.language",
+				"match": "\\b(SquareRoot|RaiseToPower|AbsoluteValue|RandomNumber|SeedRandomNumbers)\\b"
 			}]
 		},
 
 		"strings": {
-			"name": "string.quoted.double.coral",
+			"name": "keyword.control.coral",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
@@ -28,7 +67,39 @@
 					"match": "\\\\."
 				}
 			]
-		}
+		},
+		"variables": {
+			"patterns": [{
+				"name": "markup.italic",
+				"match": "\\b[a-zA-Z][a-zA-Z0-9_]*\\b"
+			}]
+		},
+		"parameters": {
+			"patterns": [{
+				"name": "variable.parameter",
+				"match": "\\b(SquareRoot|RaiseToPower|AbsoluteValue|RandomNumber|SeedRandomNumbers)\\b"
+			}]
+		},
+		"numbers": {
+			"name": "constant.numeric.coral",
+			"patterns": [
+				{
+					"name": "constant.numeric.coral",
+					"match": "\\b[0-9]+[.[0-9]+| ]\\b"
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.percentage.coral",
+			"begin": "\//",
+			"end": "\\n",
+			"patterns": [
+				{
+					"name": "constant.character.escape.coral",
+					"match": "\\\\."
+				}
+			]
+		}		
 
 	},
 	"scopeName": "source.coral"
