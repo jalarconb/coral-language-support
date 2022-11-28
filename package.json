@@ -23,11 +23,9 @@
       "scopeName": "source.coral",
       "path": "./syntaxes/coral.tmLanguage.json"
     }],
-    "snippets": [
-      {
+    "snippets": [{
         "language": "coral",
         "path": "./snippets/snippets.code-snippets"
-      }
-    ]
+    }]
   }
 }
