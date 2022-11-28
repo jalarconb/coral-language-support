@@ -4,28 +4,40 @@
   "description": "Support for the CORAL programming language",
   "publisher": "JuanEstebanAlarcon",
   "repository": "github:jalarconb/coral-language-support",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.73.0"
   },
   "categories": [
-    "Programming Languages", "Snippets"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
-    "languages": [{
-      "id": "coral",
-      "aliases": ["CORAL", "coral"],
-      "extensions": [".coral"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "coral",
-      "scopeName": "source.coral",
-      "path": "./syntaxes/coral.tmLanguage.json"
-    }],
-    "snippets": [{
+    "languages": [
+      {
+        "id": "coral",
+        "aliases": [
+          "CORAL",
+          "coral"
+        ],
+        "extensions": [
+          ".coral"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "coral",
+        "scopeName": "source.coral",
+        "path": "./syntaxes/coral.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
         "language": "coral",
         "path": "./snippets/snippets.code-snippets"
-    }]
+      }
+    ]
   }
 }
