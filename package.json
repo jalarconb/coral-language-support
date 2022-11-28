@@ -2,6 +2,8 @@
   "name": "coral-language-support",
   "displayName": "CORAL Language Support",
   "description": "Support for the CORAL programming language",
+  "publisher": "JuanEstebanAlarcon",
+  "repository": "github:jalarconb/coral-language-support",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.73.0"
