@@ -47,13 +47,13 @@
 		"keywordsLanguage": {
 			"patterns": [{
 				"name": "markup.heading.coral",
-				"match": "\\b(to|output|Get|array|returns|size|with|decimal|places|next|input|Put|nothing)\\b"
+				"match": "\\b(to|output|Get|array|returns|size|with|decimal|places|next|input|Put)\\b"
 			}]
 		},
 		"types": {
 			"patterns": [{
 				"name": "support.variable.coral",
-				"match": "\\b(integer|float)\\b"
+				"match": "\\b(integer|float|nothing)\\b"
 			}]
 		},
 		"functions": {
